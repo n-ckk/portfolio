@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "A modern, responsive portfolio built with Nuxt and Tailwind CSS.",
+    "fullDescription": "A personal portfolio website showcasing projects, skills, and contact details. Includes dynamic routes for projects and data-driven sections.",
+    "category": "Web",
+    "tags": ["Nuxt", "Vue", "Tailwind"],
+    "image": "",
+    "github": "https://github.com",
+    "demo": "",
+    "features": ["Responsive layout", "Dark mode", "Projects listing + details"],
+    "techStack": ["Nuxt", "Vue 3", "TypeScript", "Tailwind CSS"],
+    "createdAt": "2026-01-01"
+  },
+  {
+    "id": 2,
+    "title": "Task Manager",
+    "description": "A simple task manager app with CRUD features.",
+    "fullDescription": "A task manager that supports adding, editing, and completing tasks with a clean UI.",
+    "category": "App",
+    "tags": ["Vue", "Pinia"],
+    "image": "",
+    "github": "https://github.com",
+    "demo": "",
+    "features": ["Create/update/delete tasks", "Filter by status"],
+    "techStack": ["Vue 3", "Pinia", "TypeScript"],
+    "createdAt": "2025-12-15"
+  },
+  {
+    "id": 3,
+    "title": "API Dashboard",
+    "description": "A dashboard UI for visualizing API metrics and logs.",
+    "category": "Web",
+    "tags": ["Nuxt", "Charts"],
+    "image": "",
+    "github": "https://github.com",
+    "demo": "",
+    "techStack": ["Nuxt", "Vue 3", "TypeScript"],
+    "createdAt": "2025-11-20"
+  }
+]

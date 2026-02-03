@@ -1,0 +1,15 @@
+{
+  "title": "My Skills",
+  "subtitle": "Technologies and tools I work with",
+  "skills": [
+    { "name": "Vue.js", "icon": "🖖", "color": "#42b883", "level": 5 },
+    { "name": "Nuxt", "icon": "💚", "color": "#00dc82", "level": 5 },
+    { "name": "TypeScript", "icon": "📘", "color": "#3178c6", "level": 5 },
+    { "name": "JavaScript", "icon": "⚡", "color": "#f7df1e", "level": 5 },
+    { "name": "Tailwind", "icon": "🎨", "color": "#06b6d4", "level": 5 },
+    { "name": "Node.js", "icon": "🟢", "color": "#339933", "level": 30 },
+    { "name": "Python", "icon": "🐍", "color": "#3776ab", "level": 50 },
+    { "name": "Docker", "icon": "🐳", "color": "#2496ed", "level": 0 },
+    { "name": "Git", "icon": "📦", "color": "#f05032", "level": 70 }
+  ]
+}
