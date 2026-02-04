@@ -13,7 +13,7 @@
     <!-- Content -->
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
       <div class="animate-fade-in">
-        <span class="inline-block px-4 py-2 rounded-full bg-primary-500/10 text-primary-500 dark:text-primary-400 text-sm font-medium mb-6 border border-primary-500/20">
+        <span class="inline-block px-4 py-2 rounded-full bg-primary-500/10 text-black dark:text-white text-sm font-medium mb-6 border border-primary-500/20">
           {{ content.badgeText }}
         </span>
       </div>

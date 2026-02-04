@@ -10,31 +10,33 @@
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg 
-           hover:from-primary-600 hover:to-accent-600 transition-all duration-300 
+    @apply px-6 py-3 text-gray-900 font-semibold rounded-lg 
+           transition-all duration-300 
            shadow-lg hover:shadow-xl hover:-translate-y-0.5;
+    background-image: linear-gradient(to right top, #5ac177, #49b663, #37ab4d, #22a036, #00951b);
   }
-  
+
   .btn-secondary {
-    @apply px-6 py-3 border-2 border-primary-500 text-primary-500 font-semibold rounded-lg
-           hover:bg-primary-500 hover:text-white transition-all duration-300;
+    @apply px-6 py-3 border-2 border-primary-500 text-primary-600 dark:text-primary-500 font-semibold rounded-lg
+           hover:bg-primary-500 hover:text-gray-900 transition-all duration-300;
   }
-  
+
   .card {
     @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 
            hover:shadow-2xl transition-all duration-300;
   }
-  
+
   .section-title {
     @apply text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4;
   }
-  
+
   .section-subtitle {
     @apply text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto;
   }
-  
+
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-accent-500;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right top, #5ac177, #49b663, #37ab4d, #22a036, #00951b);
   }
 }
 
@@ -42,5 +44,13 @@
   .animate-gradient-x {
     background-size: 200% 200%;
     animation: gradient 8s linear infinite;
+  }
+  
+  .bg-custom-light {
+    background-image: linear-gradient(to top, #c8cdd9, #8adbfd, #00ecf1, #00f5a6, #9ef01a);
+  }
+  
+  .bg-custom-dark {
+    background-image: linear-gradient(to top, #656973, #475156, #2f3939, #1c211f, #050702);
   }
 }

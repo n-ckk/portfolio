@@ -89,9 +89,8 @@
             </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Contact Form (COMMENTED OUT)
           <div class="card">
-            <!-- Success State -->
             <div v-if="submitted" class="text-center py-8">
               <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/20 mb-4">
                 <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,13 +101,12 @@
               <p class="text-gray-600 dark:text-gray-400 mb-6">Thank you for reaching out. I'll get back to you soon.</p>
               <button @click="resetForm" class="btn-secondary">Send Another Message</button>
             </div>
-
-            <!-- Form -->
             <template v-else>
               <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Send a Message</h2>
               <ContactForm @submitted="handleSubmitted" />
             </template>
           </div>
+          -->
         </div>
       </div>
     </section>

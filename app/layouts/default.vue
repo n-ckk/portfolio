@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+  <div class="min-h-screen bg-custom-light dark:bg-custom-dark transition-colors duration-300">
     <Navbar />
     <main>
       <slot />
