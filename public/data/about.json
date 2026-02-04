@@ -1,9 +1,10 @@
 {
+  "image": "/self.jpg",
   "headline": "A passionate developer creating impactful digital solutions",
   "bio": "I am a full-stack developer with a passion for creating beautiful, functional, and user-centered digital experiences. With years of experience in web development, I am always looking to push the boundaries of what is possible.",
   "additionalInfo": "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee while reading about the latest trends in tech.",
   "stats": [
-    { "value": "0", "label": "Years Experience" },
+    { "value": "0.1", "label": "Years Experience" },
     { "value": "3", "label": "Projects Done" },
     { "value": "0", "label": "Happy Clients" }
   ]

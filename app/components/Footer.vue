@@ -52,7 +52,7 @@
       <!-- Copyright -->
       <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
         <p class="text-center text-gray-500 dark:text-gray-400 text-sm">
-          © {{ currentYear }} {{ content.brand.name }}. Built with Nuxt & Tailwind CSS.
+          Copyright © {{ currentYear }} {{ heroContent.name }}. All Rights Reserved.
         </p>
       </div>
     </div>
@@ -82,6 +82,8 @@ const fallback: SiteContent = {
 }
 
 import siteData from '../../public/data/site.json'
+import heroData from '../../public/data/hero.json'
 
 const content = computed<SiteContent>(() => (siteData ? (siteData as SiteContent) : fallback))
+const heroContent = computed(() => (heroData ? heroData : { name: 'Your Name' }))
 </script>

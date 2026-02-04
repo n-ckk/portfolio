@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+    import { defineStore } from 'pinia'
 import projectsData from '../../public/data/projects.json'
 
 export interface Project {

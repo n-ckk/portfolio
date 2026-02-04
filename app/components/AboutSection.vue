@@ -10,8 +10,14 @@
         <!-- Image -->
         <div class="relative">
           <div class="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary-500 to-accent-500 p-1">
-            <div class="w-full h-full rounded-xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-              <svg class="w-32 h-32 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+            <div class="w-full h-full rounded-xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+              <img 
+                v-if="content.image" 
+                :src="content.image" 
+                alt="Profile" 
+                class="w-full h-full object-cover"
+              />
+              <svg v-else class="w-32 h-32 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
               </svg>
             </div>
@@ -57,6 +63,7 @@
 <script setup lang="ts">
 type AboutStat = { value: string; label: string }
 type AboutContent = {
+  image?: string
   headline: string
   bio: string
   additionalInfo: string

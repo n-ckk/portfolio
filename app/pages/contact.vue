@@ -142,14 +142,14 @@ import contactData from '../../public/data/contact.json'
 
 const content = computed<ContactContent>(() => (contactData ? (contactData as ContactContent) : fallback))
 
-const handleSubmitted = () => {
-  // Scroll to top to show success message
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+// const handleSubmitted = () => {
+//   // Scroll to top to show success message
+//   window.scrollTo({ top: 0, behavior: 'smooth' })
+// }
 
-const resetForm = () => {
-  contactStore.resetState()
-}
+// const resetForm = () => {
+//   contactStore.resetState()
+// }
 
 useHead({
   title: 'Contact | My Portfolio',

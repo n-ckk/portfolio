@@ -17,7 +17,13 @@
               class="w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
               :style="{ backgroundColor: `${skill.color}20` }"
             >
-              <span class="text-2xl">{{ skill.icon }}</span>
+              <img 
+                v-if="skill.icon.includes('/') || skill.icon.includes('.')"
+                :src="skill.icon" 
+                :alt="skill.name"
+                class="w-8 h-8 object-contain"
+              />
+              <span v-else class="text-2xl">{{ skill.icon }}</span>
             </div>
             <span class="text-sm font-medium text-gray-700 dark:text-gray-300">{{ skill.name }}</span>
             <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5">
