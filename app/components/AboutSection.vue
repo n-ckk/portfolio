@@ -74,7 +74,8 @@ const fallback: AboutContent = {
   ]
 }
 
-const { data, error } = await useFetch<AboutContent>('/data/about.json')
+import aboutData from '../../public/data/about.json'
 
-const content = computed<AboutContent>(() => (data.value ? data.value : fallback))
+const error = ref(null)
+const content = computed<AboutContent>(() => (aboutData ? (aboutData as AboutContent) : fallback))
 </script>

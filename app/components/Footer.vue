@@ -81,6 +81,7 @@ const fallback: SiteContent = {
   socialLinks: []
 }
 
-const { data } = await useFetch<SiteContent>('/data/site.json')
-const content = computed<SiteContent>(() => (data.value ? data.value : fallback))
+import siteData from '../../public/data/site.json'
+
+const content = computed<SiteContent>(() => (siteData ? (siteData as SiteContent) : fallback))
 </script>

@@ -50,8 +50,9 @@ const fallback: SkillsContent = {
   ]
 }
 
-const { data } = await useFetch<SkillsContent>('/data/skills.json')
-const content = computed<SkillsContent>(() => (data.value ? data.value : fallback))
+import skillsData from '../../public/data/skills.json'
+
+const content = computed<SkillsContent>(() => (skillsData ? (skillsData as SkillsContent) : fallback))
 
 const toPercent = (level: number) => {
   // Default: treat level as percent (0-100).

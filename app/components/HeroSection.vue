@@ -70,6 +70,7 @@ const fallback: HeroContent = {
   secondaryCta: { label: 'Get in Touch', to: '/contact' }
 }
 
-const { data } = await useFetch<HeroContent>('/data/hero.json')
-const content = computed<HeroContent>(() => (data.value ? data.value : fallback))
+import heroData from '../../public/data/hero.json'
+
+const content = computed<HeroContent>(() => (heroData ? (heroData as HeroContent) : fallback))
 </script>

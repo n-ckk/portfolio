@@ -140,8 +140,9 @@ const fallback: ContactContent = {
   socialLinks: []
 }
 
-const { data } = await useFetch<ContactContent>('/data/contact.json')
-const content = computed<ContactContent>(() => (data.value ? data.value : fallback))
+import contactData from '../../public/data/contact.json'
+
+const content = computed<ContactContent>(() => (contactData ? (contactData as ContactContent) : fallback))
 
 const handleSubmitted = () => {
   // Scroll to top to show success message

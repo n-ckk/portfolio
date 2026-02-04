@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import projectsData from '../../public/data/projects.json'
 
 export interface Project {
     id: number
@@ -52,8 +53,7 @@ export const usePortfolioStore = defineStore('portfolio', {
             this.error = null
 
             try {
-                const projects = await $fetch<Project[]>('/data/projects.json')
-                this.projects = projects
+                this.projects = projectsData as Project[]
             } catch (err: any) {
                 console.error('Failed to fetch projects:', err)
                 this.error = err.message || 'Failed to fetch projects'
@@ -69,7 +69,7 @@ export const usePortfolioStore = defineStore('portfolio', {
             try {
                 // Ensure projects are loaded
                 if (this.projects.length === 0) {
-                    this.projects = await $fetch<Project[]>('/data/projects.json')
+                    this.projects = projectsData as Project[]
                 }
 
                 const found = this.projects.find(p => p.id === Number(id))
