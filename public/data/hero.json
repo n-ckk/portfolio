@@ -1,6 +1,6 @@
 {
   "badgeText": "👋 Welcome to my portfolio",
-  "name": "Your Name",
+  "name": "Nick Ng Qi Hao",
   "title": "Full Stack Developer",
   "description": "I create beautiful, responsive web applications using modern technologies. Passionate about clean code and great user experiences.",
   "primaryCta": { "label": "View My Work", "to": "/projects" },
