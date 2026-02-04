@@ -6,9 +6,9 @@
     "fullDescription": "A personal portfolio website showcasing projects, skills, and contact details. Includes dynamic routes for projects and data-driven sections.",
     "category": "Web",
     "tags": ["Nuxt", "Vue", "Tailwind"],
-    "image": "/Portfolioimage.png",
+    "image": "/Portfoliopic.png",
     "github": "https://github.com/n-ckk/portfolio",
-    "demo": "",
+    "demo": "https://github.com",
     "features": ["Responsive layout", "Dark mode", "Projects listing + details"],
     "techStack": ["Nuxt", "Vue 3", "TypeScript", "Tailwind CSS"],
     "createdAt": "2026-01-01"

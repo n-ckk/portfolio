@@ -10,7 +10,7 @@
         <div
           v-for="skill in content.skills"
           :key="skill.name"
-          class="card group cursor-pointer hover:-translate-y-2"
+          class="card group hover:-translate-y-2"
         >
           <div class="flex flex-col items-center text-center space-y-3">
             <div 

@@ -3,6 +3,7 @@
     <!-- Hero Section -->
     <section class="py-16 px-4">
       <div class="max-w-4xl mx-auto text-center">
+        <!-- 📱 Mobile: text-4xl | 💻 Tablet/Laptop (md:768px+): text-5xl -->
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
           About <span class="gradient-text">Me</span>
         </h1>
@@ -15,6 +16,7 @@
     <!-- Main Content -->
     <section class="py-12 px-4">
       <div class="max-w-6xl mx-auto">
+        <!-- 📱 Mobile: 1 column (stacked) | 💻 Laptop (lg:1024px+): 2 columns (side-by-side) -->
         <div class="grid lg:grid-cols-2 gap-12 items-start">
           <!-- Left Column - Image & Info -->
           <div class="space-y-8">

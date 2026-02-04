@@ -37,17 +37,34 @@ export const useContactStore = defineStore('contact', {
             this.error = null
 
             try {
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 1500))
+                const formData = {
+                    name: this.form.name,
+                    email: this.form.email,
+                    subject: this.form.subject,
+                    message: this.form.message,
+                    timestamp: new Date().toISOString()
+                }
 
-                // In a real app, you would send the form data to your backend
+                // Send to our server API endpoint (which then forwards to webhook)
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                })
+
+                if (!response.ok) {
+                    throw new Error('Failed to send message')
+                }
+
                 console.log('Form submitted:', this.form)
 
                 this.submitted = true
                 this.resetForm()
             } catch (err: any) {
                 console.error('Failed to submit form:', err)
-                this.error = err.message || 'Failed to send message'
+                this.error = err.message || 'Failed to send message. Please try again.'
             } finally {
                 this.submitting = false
             }

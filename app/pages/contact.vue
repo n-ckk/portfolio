@@ -89,7 +89,7 @@
             </div>
           </div>
 
-          <!-- Contact Form (COMMENTED OUT)
+          <!-- Contact Form (COMMENTED OUT)-->
           <div class="card">
             <div v-if="submitted" class="text-center py-8">
               <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 dark:bg-green-900/20 mb-4">
@@ -106,7 +106,6 @@
               <ContactForm @submitted="handleSubmitted" />
             </template>
           </div>
-          -->
         </div>
       </div>
     </section>
@@ -142,14 +141,14 @@ import contactData from '../../public/data/contact.json'
 
 const content = computed<ContactContent>(() => (contactData ? (contactData as ContactContent) : fallback))
 
-// const handleSubmitted = () => {
-//   // Scroll to top to show success message
-//   window.scrollTo({ top: 0, behavior: 'smooth' })
-// }
+const handleSubmitted = () => {
+  // Scroll to top to show success message
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
-// const resetForm = () => {
-//   contactStore.resetState()
-// }
+const resetForm = () => {
+  contactStore.resetState()
+}
 
 useHead({
   title: 'Contact | My Portfolio',
