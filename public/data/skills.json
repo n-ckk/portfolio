@@ -10,6 +10,9 @@
     { "name": "Node.js", "icon": "/nodejs.png", "color": "#339933", "level": 30 },
     { "name": "Python", "icon": "/python.png", "color": "#3776ab", "level": 50 },
     { "name": "Docker", "icon": "/docker.png", "color": "#2496ed", "level": 0 },
-    { "name": "Git", "icon": "/github.png", "color": "#f05032", "level": 70 }
+    { "name": "Git", "icon": "/github.png", "color": "#f05032", "level": 70 },
+    { "name": "OpenClaw", "icon": "🦞", "color": "#ff4500", "level": 50 },
+    { "name": "Hermes", "icon": "🧠", "color": "#8b5cf6", "level": 50 },
+    { "name": "Claude", "icon": "🟠", "color": "#d97706", "level": 50 }
   ]
 }
